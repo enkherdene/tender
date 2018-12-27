@@ -1,0 +1,24 @@
+<% include partials/header.ejs %>
+
+    
+    <div class="row">
+        
+
+    <div class="col">
+        <a > <%=tender.name %></a>
+        <a > <%=tender.number %></a>
+        <a > <%=tender.about %></a>
+        <form action="/sanal/<%=tender.id %>" method="GET" >
+            <button type="submit" class="btn btn-primary">санал өгөх</button>
+        </form> 
+    </div>
+     
+
+
+
+
+    
+    </div>
+    
+   
+<% include partials/footer.ejs %>

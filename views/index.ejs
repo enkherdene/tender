@@ -1,0 +1,36 @@
+<% include partials/header.ejs %>
+
+    
+    <div class="row">
+         <div class="col-md-3">
+            
+          </div>
+        <div class="col-md-6">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">нэр</th>
+                    <th scope="col">дугаар</th>
+                    <th scope="col">тайлбар</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <% tenders.forEach(function(a){ %>
+                        <tr>
+                            <td><a href="/tender/<%=a.id %>"> <%=a.name %></a></td>
+                            <td><a href="/tender/<%=a.id %>"> <%=a.number %></a></td>
+                            <td><a href="/tender/<%=a.id %>"> <%=a.about %></a></td>
+                        </tr>
+                    <% }); %>
+                
+                </tbody>
+            </table>
+          </div>
+          <div class="col-md-3">
+            
+          </div>
+    
+    </div>
+    
+   
+<% include partials/footer.ejs %>

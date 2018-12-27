@@ -1,0 +1,32 @@
+<% include partials/header.ejs %>
+
+    
+    <div class="row">
+        
+
+    <div class="col">
+        <form action="/add" method="post" >
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="name">Нэр</label>
+                    <input class="form-control" type="text" name="name" >
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="register">рд</label>
+                    <input class="form-control" type="number" min="0" name="number" >
+                </div>
+            </div>
+           
+            <button type="submit" class="btn btn-primary">бүртгэх</button>
+        </form>
+    </div>
+        
+
+
+
+
+    
+    </div>
+    
+   
+<% include partials/footer.ejs %>
